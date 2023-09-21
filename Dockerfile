@@ -1,5 +1,5 @@
-FROM node:20-alpine3.17
+FROM node:18-alpine
 WORKDIR /react-container
 COPY . .
-RUN npm run build
+RUN npm install
 CMD [ "npm", "start" ]
